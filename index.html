@@ -185,11 +185,20 @@ a, a:focus, a:hover, a:visited {
 	right: 0.1em;
 	width: 6em;
 }
+
+/*#fb {
+	position: absolute;
+	bottom: 1em;
+	left: 50%;
+}*/
 </style>
 
 </head>
 
 <body>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2&appId=136126233193111"></script>
 
 <div class="outer">
   <div class="middle">
@@ -197,6 +206,9 @@ a, a:focus, a:hover, a:visited {
       
       <span id="intro">До вступления в силу <a href="https://meduza.io/news/2019/04/16/gosduma-prinyala-zakon-ob-izolyatsii-runeta" target="blank">закона об изоляции Рунета</a> осталось</span>
 		<h1 id="countdown">000:00:00:00</h1>
+		<div id="fb">
+			<div class="fb-share-button" data-href="https://russia404.net" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frussia404.net%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+		</div>
 		
     </div>
   </div>
@@ -208,6 +220,7 @@ a, a:focus, a:hover, a:visited {
 </div> -->
 
 <div id="telegram">Подписывайтесь на <a href="http://t-do.ru/russia404net">канал «Россия 404» в Телеграме</a> (пока его не запретили)</div>
+
 <div id="credits">Made by Nik & Eugene</div>
 </body>
 
