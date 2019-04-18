@@ -39,6 +39,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+<!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18817813-2"></script>
 <script>
@@ -186,6 +189,11 @@ a, a:focus, a:hover, a:visited {
 	width: 6em;
 }
 
+#fb, #vk {
+	float: left;
+	margin-right: 1em;
+}
+
 /*#fb {
 	float: left;
 }*/
@@ -218,6 +226,12 @@ a, a:focus, a:hover, a:visited {
 		<div id="fb">
 			<div class="fb-share-button" data-href="https://russia404.net" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frussia404.net%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 		</div>
+		<!-- Put this script tag to the place, where the Share button will be -->
+		<div id="vk">
+			<script type="text/javascript"><!--
+				document.write(VK.Share.button(false,{type: "round", text: "Паниковать вместе"}));
+			--></script>
+		</div>
 		
     </div>
   </div>
@@ -229,10 +243,10 @@ a, a:focus, a:hover, a:visited {
 </div> -->
 
 <!-- <div id="telegram">Подписывайтесь на <a href="http://t-do.ru/russia404net">канал «Россия 404» в Телеграме</a> (пока его не запретили)</div> -->
-<div id="telegram"><a href="http://t-do.ru/russia404net/12">Прочитайте письмо из будущего:</a> Как может выглядеть жизнь 17-го апреля 2020-го года</div>
+<div id="telegram"><a href="http://t-do.ru/russia404net/12" onclick=”ga(‘send’, ‘event’, ‘Links’, ‘Telegram post’, ‘Telegram post - Fictional letter’);“>Прочитайте письмо из будущего:</a> Как может выглядеть жизнь 17-го апреля 2020-го года</div>
 
 
-<div id="credits">Made by Nik & Eugene. <span id="wtf"><a href="https://tjournal.ru/art/93893-rossiya-404-skolko-ostalos-zhit-svobodnomu-internetu" target="_blank">Что это?</a></span></div>
+<div id="credits">Made by Nik & Eugene. <span id="wtf"><a href="https://tjournal.ru/art/93893-rossiya-404-skolko-ostalos-zhit-svobodnomu-internetu" target="_blank" onclick=”ga(‘send’, ‘event’, ‘Links’, 'WTF', ‘WTF - TJ post’);“>Что это?</a></span></div>
 </body>
 
 </html>
