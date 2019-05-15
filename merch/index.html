@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>title here again</title>
+	<meta name="description" content="description here again">
+
+	<meta property="og:title" content="title here again" />
+	<meta name="og:description" content="description here again" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://eugenekudashev.com/url-of-this-page/" />
+	<meta property="og:image" content="http://eugenekudashev.com/url-of-this-page/thumbnail.png" />
+	<!-- <meta property="og:video" content="http://eugenekudashev.com/real-time-salary-counter/salary-counter-video.mov" /> -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@eugenekudashev" />
+	<meta name="twitter:creator" content="@eugenekudashev" />
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!-- makes mobile queries work -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://livejs.com/live.js"></script>
+
+
+<script type="text/javascript">
+
+$(document).ready( function() {
+  $("img").hover( function() {
+  	$(this).attr('src','print__close_up.png')
+  })
+
+  $("img").mouseout( function() {
+  	$(this).attr('src','t-shirt__black.png')
+  })
+
+
+  var toggle=0;
+
+  $("img").click( function() {
+  	if(toggle==0) {
+  		$(this).attr('src','print__close_up.png')
+  		toggle = 1;
+  	}
+  	else {
+  		$(this).attr('src','t-shirt__black.png')
+  		toggle=0;
+  	}
+  })
+})
+
+</script>
+
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Courier New", "Courier", monospace;
+	color: #fff;
+	font-weight: bold;
+}
+
+body {
+	background: #181717;
+	margin: 2em;
+}
+
+
+
+img {
+	width: 35%;
+	padding: 3em;
+	background: #000;
+	margin-right: 2em;
+	margin-bottom: 2em;
+	float: left;
+}
+
+h1 {
+	float: left;
+	color: #fff;
+	font-size: 1em;
+	margin-bottom: 2em;
+}
+
+.clear_float {
+	clear:both;
+}
+
+.order_wrapper {
+
+}
+
+.order {
+	background: #050292;
+	color: white;
+	font-size: 1em;
+	border: 0;
+	outline: none;
+	padding: 0.5em 2em;
+	margin-right: 2em;
+	text-decoration: none;
+	margin-bottom: 0.5em;
+	display: inline-block;
+}
+
+.deadline {
+	text-align: center;
+	border: 1px solid #fff;
+	padding: 0.5em 2em;
+	display: inline-block;
+	width: 200px;
+}
+
+.order_count {
+	font-style: italic;
+}
+
+.details {
+	margin-top: 3em;
+	width: 40%;
+	font-weight: bold;
+}
+.details h2 {
+	font-size: 1em;
+	text-decoration: underline;
+	margin-bottom: 1em;
+}
+.details p {
+	margin-bottom: 4em;
+}
+
+
+/*all mobile queries here*/
+@media only screen and (max-width: 768px) {
+	body {
+		margin:1em;
+	}
+
+	img {
+		width: 75%;
+		margin: 0;
+	}
+	.details {
+		width: 90%;
+	}
+}
+</style>
+
+</head>
+
+<body>
+<img src="t-shirt__black.png">
+
+<h1>«телик смотри»<br/> 2,000₽<br/> XL унисекс</h1>
+
+<div class="clear_float"></div>
+
+<div class="order_wrapper">
+	<a href="https://rocketbank.ru/russia404" target="_blank" class="order">предзаказ здесь</a>
+	<span class="deadline">мы принимаем заказы  до 1-го июня 2019</span>
+</div>
+
+
+<p class="order_count">уже продано 3 футболки <br/>(минимальный тираж 10)</p>
+
+<div class="details">
+	<h2>что значит предзаказ</h2>
+
+	<p>
+		мы отправим футболки в производство, когда получим заказ на 10 футболок минимум
+	<br/><br/>
+	если этого никогда не случится, вы получите свои деньги назад и мы все притворимся, что ничего этого никогда не было
+	</p>
+
+
+	<h2>оплата</h2>
+
+	<p>
+		картой, онлайн, через рокетбанк
+	<br/><br/>
+	❗️в сообщении на рокетбанке обязательно укажите свой @никнэйм в телеграме (или любой другой способ написать вам)
+	<br/><br/>
+	ведь как еще мы сможем написать вам и договориться о доставке
+	</p>
+
+
+	<h2>доставка</h2>
+
+	<p>
+		в Москве — приедет курьер
+	<br/><br/>
+	не в Москве — отправим Почтой России™ и помолимся
+	</p>
+</div>
+
+
+
+
+
+</body>
+
+</html>

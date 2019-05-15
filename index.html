@@ -228,8 +228,16 @@ a, a:focus, a:hover, a:visited {
 		</div>
 		<!-- Put this script tag to the place, where the Share button will be -->
 		<div id="vk">
+
 			<script type="text/javascript"><!--
-				document.write(VK.Share.button(false,{type: "round", text: "Паниковать вместе"}));
+				// document.write(VK.Share.button(false,{type: "round", text: "Паниковать вместе"}));
+				document.write(VK.Share.button({
+				  url: 'http://russia404.net',
+				  // title: 'Заголовок страницы',
+				  // image: 'http://mysite.com/mypic.jpg',
+				  // noparse: true
+				},{type:"round",text: "Паниковать вместе"}));
+
 			--></script>
 		</div>
 		
