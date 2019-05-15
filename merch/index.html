@@ -6,7 +6,7 @@
 	<meta name="description" content="предзаказ здесь · мы принимаем заказы  до 1-го июня 2019">
 
 	<meta property="og:title" content="«телик смотри» · 2,000₽ · XL унисекс" />
-	<meta name="og:description" content="предзаказ здесь · мы принимаем заказы  до 1-го июня 2019" />
+	<meta name="og:description" content="предзаказ здесь · мы принимаем заказы до 1-го июня 2019" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://russia404.net/merch" />
 	<meta property="og:image" content="https://russia404.net/merch/social-media-thumbnail.png" />
@@ -26,18 +26,18 @@
 <script type="text/javascript">
 
 $(document).ready( function() {
-  $("img").hover( function() {
+  $(".tshirt").hover( function() {
   	$(this).attr('src','print__close_up.png')
   })
 
-  $("img").mouseout( function() {
+  $(".tshirt").mouseout( function() {
   	$(this).attr('src','t-shirt__black.png')
   })
 
 
   var toggle=0;
 
-  $("img").click( function() {
+  $(".tshirt").click( function() {
   	if(toggle==0) {
   		$(this).attr('src','print__close_up.png')
   		toggle = 1;
@@ -67,7 +67,7 @@ body {
 
 
 
-img {
+img.tshirt {
 	width: 35%;
 	padding: 3em;
 	background: #000;
@@ -137,7 +137,7 @@ h1 {
 		margin:1em;
 	}
 
-	img {
+	img.tshirt {
 		width: 75%;
 		margin: 0;
 	}
@@ -145,19 +145,27 @@ h1 {
 		width: 90%;
 	}
 }
+
+.backtohomepage img {
+	width: 50%;
+}
+
+.backtohomepage a {
+	color: red;
+}
 </style>
 
 </head>
 
 <body>
-<img src="t-shirt__black.png">
+<img class="tshirt" src="t-shirt__black.png">
 
 <h1>«телик смотри»<br/> 2,000₽<br/> XL унисекс</h1>
 
 <div class="clear_float"></div>
 
 <div class="order_wrapper">
-	<a href="https://rocketbank.ru/russia404" target="_blank" class="order">предзаказ здесь</a>
+	<a href="https://rocketbank.ru/russia404" target="_blank" class="order">предзаказ здесь →</a>
 	<span class="deadline">мы принимаем заказы  до 1-го июня 2019</span>
 </div>
 
@@ -181,7 +189,7 @@ h1 {
 	<br/><br/>
 	❗️в сообщении на рокетбанке обязательно укажите свой @никнэйм в телеграме (или любой другой способ написать вам)
 	<br/><br/>
-	ведь как еще мы сможем написать вам и договориться о доставке
+	мы напишем вам и договоримся о доставке
 	</p>
 
 
@@ -194,7 +202,11 @@ h1 {
 	</p>
 </div>
 
-
+<div class="backtohomepage">
+	<a href="https://russia404.net">
+		<img src="counter.png"><br>обратно к счетчику ↗
+	</a>
+</div>
 
 
 
