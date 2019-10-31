@@ -57,7 +57,7 @@
 
 $(document).ready( function() {
 
-  var deadline = new Date('November 1, 2019 00:00:30');
+  var deadline = new Date('October 1, 2019 00:00:30');
 
   var msMinute = 60*1000,
   msHour = 60*60*1000,
@@ -71,25 +71,25 @@ function init() {
 }
 
 function update_time(today) {
-	var countdown = Math.floor((deadline - today) / msDay) + ":" + get_hours(today) + ":" + get_minutes(today) + ":" + get_seconds(today);
+	var countdown = Math.floor((today - deadline) / msDay) + ":" + get_hours(today) + ":" + get_minutes(today) + ":" + get_seconds(today);
 
 	$("#countdown").text(countdown)
 }
 
 function get_hours(today) {
-	var hours = Math.floor(((deadline - today) % msDay) / msHour);
+	var hours = Math.floor(((today - deadline) % msDay) / msHour);
 	if (hours<=9) hours = "0" + hours;
 	return hours
 }
 
 function get_minutes(today) {
-	var minutes = Math.floor(((deadline - today) % msDay % msHour) / msMinute);
+	var minutes = Math.floor(((today - deadline) % msDay % msHour) / msMinute);
 	if (minutes<=9) minutes = "0" + minutes;
 	return minutes
 }
 
 function get_seconds(today) {
-	var seconds = Math.floor(((deadline - today) % msDay % msHour % msMinute) / 1000);
+	var seconds = Math.floor(((today - deadline) % msDay % msHour % msMinute) / 1000);
 	if (seconds<=9) seconds = "0" + seconds;
 	return seconds
 }
@@ -228,7 +228,7 @@ a, a:focus, a:hover, a:visited {
   <div class="middle">
     <div class="inner">
       
-      <span id="intro">До вступления в силу <a href="https://meduza.io/news/2019/04/16/gosduma-prinyala-zakon-ob-izolyatsii-runeta" onclick="ga('send', 'event', 'Links', 'Meduza', 'Meduza article');" target="_blank">закона об изоляции Рунета</a> осталось</span>
+      <span id="intro">Рунет <a href="https://meduza.io/news/2019/04/16/gosduma-prinyala-zakon-ob-izolyatsii-runeta" onclick="ga('send', 'event', 'Links', 'Meduza', 'Meduza article');" target="_blank">всё ещё жив</a> целых</span>
 		<h1 id="countdown">000:00:00:00</h1>
 		<div id="fb">
 			<div class="fb-share-button" data-href="https://russia404.net" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Frussia404.net%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
